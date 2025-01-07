@@ -32,7 +32,7 @@ class CartPage extends StatelessWidget {
                         trailing: IconButton(
                           onPressed: () =>
                               Provider.of<CartModel>(context, listen: false)
-                                  .removeItemFromCart,
+                                  .removeItemFromCart(index),
                           icon: Icon(Icons.cancel),
                         ),
                       ),
